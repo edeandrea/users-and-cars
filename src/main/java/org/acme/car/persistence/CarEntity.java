@@ -1,4 +1,4 @@
-package org.acme.car.persistence.entity;
+package org.acme.car.persistence;
 
 import java.util.Objects;
 import java.util.StringJoiner;
@@ -12,7 +12,7 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
-import org.acme.domain.Make;
+import org.acme.common.domain.Make;
 
 @Entity
 @Table(name = "cars")
@@ -28,7 +28,7 @@ public class CarEntity {
 	@NotEmpty(message = "Car must have a model")
 	private String model;
 
-//	@OneToMany(mappedBy = "car", fetch = FetchType.LAZY)
+//	@OneToMany(mappedBy = "car", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 //	private Set<UserAndCarEntity> usersAndCars;
 
 	public CarEntity() {

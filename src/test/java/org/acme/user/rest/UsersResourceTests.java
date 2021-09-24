@@ -7,9 +7,8 @@ import static org.mockito.Mockito.*;
 import java.util.List;
 import java.util.Optional;
 
-import org.acme.car.rest.entity.CarDto;
-import org.acme.domain.Make;
-import org.acme.user.rest.entity.UserDto;
+import org.acme.car.rest.CarDto;
+import org.acme.common.domain.Make;
 import org.acme.user.service.UsersService;
 import org.junit.jupiter.api.Test;
 

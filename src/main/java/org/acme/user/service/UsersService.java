@@ -8,16 +8,16 @@ import java.util.stream.Stream;
 import javax.enterprise.context.ApplicationScoped;
 
 import org.acme.car.mapping.CarMapper;
+import org.acme.car.persistence.CarEntity;
 import org.acme.car.persistence.CarEntityRepository;
-import org.acme.car.persistence.entity.CarEntity;
-import org.acme.car.rest.entity.CarDto;
-import org.acme.persistence.UserAndCarEntityRepository;
-import org.acme.persistence.entity.UserAndCarEntity;
-import org.acme.persistence.entity.UserCarKey;
+import org.acme.car.rest.CarDto;
+import org.acme.common.persistence.UserAndCarEntity;
+import org.acme.common.persistence.UserAndCarEntityRepository;
+import org.acme.common.persistence.UserCarKey;
 import org.acme.user.mapping.UserMapper;
+import org.acme.user.persistence.UserEntity;
 import org.acme.user.persistence.UserEntityRepository;
-import org.acme.user.persistence.entity.UserEntity;
-import org.acme.user.rest.entity.UserDto;
+import org.acme.user.rest.UserDto;
 
 @ApplicationScoped
 public class UsersService {
@@ -47,6 +47,9 @@ public class UsersService {
 	}
 
 	private UserDto createUser(UserEntity userEntity) {
+//		Stream<Long> carIdsForUser = Optional.ofNullable(userEntity)
+//			.map(UserEntity::getUsersAndCars)
+//			.orElseGet(Set::of)
 		Stream<Long> carIdsForUser = this.userAndCarEntityRepository.listAllForUserId(userEntity.getId())
 			.stream()
 			.map(UserAndCarEntity::getId)

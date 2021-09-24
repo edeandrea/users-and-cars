@@ -4,9 +4,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import javax.inject.Inject;
 
-import org.acme.car.persistence.entity.CarEntity;
-import org.acme.car.rest.entity.CarDto;
-import org.acme.domain.Make;
+import org.acme.car.persistence.CarEntity;
+import org.acme.car.rest.CarDto;
+import org.acme.common.domain.Make;
 import org.junit.jupiter.api.Test;
 
 import io.quarkus.test.junit.QuarkusTest;

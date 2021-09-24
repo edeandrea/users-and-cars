@@ -1,4 +1,4 @@
-package org.acme.persistence.entity;
+package org.acme.common.persistence;
 
 import java.util.Objects;
 import java.util.StringJoiner;
@@ -12,13 +12,13 @@ import javax.persistence.Table;
 public class UserAndCarEntity {
 	@EmbeddedId
 	private UserCarKey id;
-//
-//	@ManyToOne(fetch = FetchType.LAZY)
+
+//	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 //	@MapsId("userId")
 //	@JoinColumn(name = "user_id")
 //	private UserEntity user;
 //
-//	@ManyToOne(fetch = FetchType.LAZY)
+//	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 //	@MapsId("carId")
 //	@JoinColumn(name = "car_id")
 //	private CarEntity car;

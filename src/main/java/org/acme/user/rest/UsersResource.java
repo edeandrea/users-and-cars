@@ -10,7 +10,6 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
-import org.acme.user.rest.entity.UserDto;
 import org.acme.user.service.UsersService;
 
 @Path("/users")

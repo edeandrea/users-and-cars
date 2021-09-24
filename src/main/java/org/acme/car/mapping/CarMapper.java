@@ -1,7 +1,7 @@
 package org.acme.car.mapping;
 
-import org.acme.car.persistence.entity.CarEntity;
-import org.acme.car.rest.entity.CarDto;
+import org.acme.car.persistence.CarEntity;
+import org.acme.car.rest.CarDto;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.InjectionStrategy;
 import org.mapstruct.Mapper;

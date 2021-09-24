@@ -1,4 +1,4 @@
-package org.acme.user.persistence.entity;
+package org.acme.user.persistence;
 
 import java.util.Objects;
 import java.util.StringJoiner;
@@ -19,7 +19,7 @@ public class UserEntity {
 	@NotEmpty(message = "User must have a name")
 	private String name;
 
-//	@OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+//	@OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 //	private Set<UserAndCarEntity> usersAndCars;
 
 	public UserEntity() {

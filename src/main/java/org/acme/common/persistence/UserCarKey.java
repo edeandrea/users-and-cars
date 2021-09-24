@@ -1,4 +1,4 @@
-package org.acme.persistence.entity;
+package org.acme.common.persistence;
 
 import java.io.Serializable;
 import java.util.Objects;

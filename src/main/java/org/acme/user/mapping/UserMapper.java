@@ -1,7 +1,7 @@
 package org.acme.user.mapping;
 
-import org.acme.user.persistence.entity.UserEntity;
-import org.acme.user.rest.entity.UserDto;
+import org.acme.user.persistence.UserEntity;
+import org.acme.user.rest.UserDto;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.InjectionStrategy;
 import org.mapstruct.Mapper;

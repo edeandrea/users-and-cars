@@ -4,8 +4,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import javax.inject.Inject;
 
-import org.acme.user.persistence.entity.UserEntity;
-import org.acme.user.rest.entity.UserDto;
+import org.acme.user.persistence.UserEntity;
+import org.acme.user.rest.UserDto;
 import org.junit.jupiter.api.Test;
 
 import io.quarkus.test.junit.QuarkusTest;

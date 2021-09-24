@@ -1,9 +1,9 @@
-package org.acme.user.rest.entity;
+package org.acme.user.rest;
 
 import java.util.List;
 import java.util.StringJoiner;
 
-import org.acme.car.rest.entity.CarDto;
+import org.acme.car.rest.CarDto;
 
 public class UserDto {
 	private Long id;

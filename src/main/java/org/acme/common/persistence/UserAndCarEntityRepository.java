@@ -1,10 +1,8 @@
-package org.acme.persistence;
+package org.acme.common.persistence;
 
 import java.util.List;
 
 import javax.enterprise.context.ApplicationScoped;
-
-import org.acme.persistence.entity.UserAndCarEntity;
 
 import io.quarkus.hibernate.orm.panache.PanacheRepository;
 

@@ -1,4 +1,4 @@
-package org.acme.persistence;
+package org.acme.common.persistence;
 
 import static org.assertj.core.api.Assertions.*;
 
@@ -7,8 +7,6 @@ import java.util.stream.Collectors;
 
 import javax.inject.Inject;
 
-import org.acme.persistence.entity.UserAndCarEntity;
-import org.acme.persistence.entity.UserCarKey;
 import org.junit.jupiter.api.Test;
 
 import io.quarkus.test.TestTransaction;
