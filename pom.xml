@@ -6,12 +6,12 @@
   <artifactId>users-and-cars</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <properties>
+    <assertj.version>3.23.1</assertj.version>
     <compiler-plugin.version>3.8.1</compiler-plugin.version>
     <maven.compiler.parameters>true</maven.compiler.parameters>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
-    <org.mapstruct.version>1.4.2.Final</org.mapstruct.version>
-    <assertj.version>3.23.1</assertj.version>
+    <org.mapstruct.version>1.5.3.Final</org.mapstruct.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
@@ -62,6 +62,10 @@
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-smallrye-openapi</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
       <artifactId>quarkus-junit5</artifactId>
       <scope>test</scope>
     </dependency>
@@ -76,10 +80,10 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-    <groupId>org.assertj</groupId>
-    <artifactId>assertj-core</artifactId>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
       <version>${assertj.version}</version>
-    <scope>test</scope>
+      <scope>test</scope>
     </dependency>
   </dependencies>
   <build>
